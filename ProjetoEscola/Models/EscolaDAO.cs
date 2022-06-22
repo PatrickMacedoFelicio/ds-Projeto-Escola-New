@@ -29,23 +29,23 @@ namespace SchoolSystem.Models
                 comando.CommandText = "Insert into escola values (null, @nome_fantasia_esc, @razão_social_esc, @cnpj_esc, @insc_estadual_esc, @tipo_esc, @data_criacao_esc, @responsavel_esc , @responsavel_telefone_esc, @telefone_esc, " +
                     "@email_esc, @rua_esc, @bairro_esc, @numero_esc, @cep_esc, @complemento_esc, @cidade_esc, @estado_esc);";
 
-                comando.Parameters.AddWithValue("@nomeFant", escola.NomeFantasia);
-                comando.Parameters.AddWithValue("@razSocial", escola.RazaoSocial);
-                comando.Parameters.AddWithValue("@cnpj", escola.Cnpj);
-                comando.Parameters.AddWithValue("@inscEst", escola.InscricaoEstadual);
-                comando.Parameters.AddWithValue("@tipo", escola.Tipo);
-                comando.Parameters.AddWithValue("@data", escola.Data);
-                comando.Parameters.AddWithValue("@responsavel", escola.NomeResp);
-                comando.Parameters.AddWithValue("@telResp", escola.TelResp);
-                comando.Parameters.AddWithValue("@telEsc", escola.TelefoneEsc);
-                comando.Parameters.AddWithValue("@emailEsc", escola.EmailEsc);
-                comando.Parameters.AddWithValue("@rua", escola.Rua);
-                comando.Parameters.AddWithValue("@bairro", escola.Bairro);
-                comando.Parameters.AddWithValue("@numRua", escola.NumeroRua);
-                comando.Parameters.AddWithValue("@cep", escola.Cep);
-                comando.Parameters.AddWithValue("@complemento", escola.Complemento);
-                comando.Parameters.AddWithValue("@cidade", escola.CidadeEsc);
-                comando.Parameters.AddWithValue("@estado", escola.Estado);
+                comando.Parameters.AddWithValue("@nome_fantasia_esc", escola.NomeFantasia);
+                comando.Parameters.AddWithValue("@razão_social_esc", escola.RazaoSocial);
+                comando.Parameters.AddWithValue("@cnpj_esc", escola.Cnpj);
+                comando.Parameters.AddWithValue("@insc_estadual_esc", escola.InscricaoEstadual);
+                comando.Parameters.AddWithValue("@tipo_esc", escola.Tipo);
+                comando.Parameters.AddWithValue("@data_criacao_esc", escola.Data);
+                comando.Parameters.AddWithValue("@responsavel_esc", escola.NomeResp);
+                comando.Parameters.AddWithValue("@responsavel_telefone_esc", escola.TelResp);
+                comando.Parameters.AddWithValue("@telefone_esc", escola.TelefoneEsc);
+                comando.Parameters.AddWithValue("@email_esc", escola.EmailEsc);
+                comando.Parameters.AddWithValue("@rua_esc", escola.Rua);
+                comando.Parameters.AddWithValue("@bairro_esc", escola.Bairro);
+                comando.Parameters.AddWithValue("@numero_esc", escola.NumeroRua);
+                comando.Parameters.AddWithValue("@cep_esc,", escola.Cep);
+                comando.Parameters.AddWithValue("@complemento_esc", escola.Complemento);
+                comando.Parameters.AddWithValue("@cidade_esc", escola.CidadeEsc);
+                comando.Parameters.AddWithValue("@estado_esc", escola.Estado);
                 var resultado = comando.ExecuteNonQuery();
 
                 Console.WriteLine(resultado);
@@ -95,6 +95,7 @@ namespace SchoolSystem.Models
                 comando.Parameters.AddWithValue("@estado", escola.Estado);
                 comando.Parameters.AddWithValue("@id", escola.Id);
                 var resultado = comando.ExecuteNonQuery();
+
 
 
                 //if (resultado > 0)

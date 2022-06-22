@@ -24,14 +24,14 @@
 
         <StackPanel Grid.Row="1" Margin="60 60" MaxWidth="500">
             <Label Content="Nome:" FontSize="25" Foreground="#DDFFFFFF" OpacityMask="Black"/>
-            <TextBox x:Name="txtNome" Cursor="Arrow" FontSize="20" VerticalContentAlignment="Center" Height="40" BorderBrush="White" OpacityMask="Black" />
+            <TextBox x:Name="txtNome" Cursor="Arrow" FontSize="20" VerticalContentAlignment="Center" Height="40" BorderBrush="White" OpacityMask="Black" Foreground="White" />
 
             <Label Content="Carga Horária:" FontSize="25" Foreground="#DDFFFFFF" OpacityMask="Black"/>
-            <TextBox x:Name="txtCargaHoraria"  Cursor="Arrow" FontSize="20" VerticalContentAlignment="Center" Height="40" BorderBrush="White" OpacityMask="Black" />
+            <TextBox x:Name="txtCargaHoraria"  Cursor="Arrow" FontSize="20" VerticalContentAlignment="Center" Height="40" BorderBrush="White" OpacityMask="Black" Foreground="White" />
 
             <StackPanel Orientation="Horizontal" Height="82">
                 <Label Content="Turno:" FontSize="25" Height="39" Foreground="#DDFFFFFF" OpacityMask="Black" />
-                <ComboBox x:Name="cbTurno"  MinWidth="100" FontSize="20" Margin="10 0 0 0" BorderBrush="#89FFFFFF" OpacityMask="Black">
+                <ComboBox x:Name="cbTurno"  MinWidth="100" FontSize="20" Margin="10 0 0 0" BorderBrush="#89FFFFFF" OpacityMask="Black" Foreground="Black">
                     <ComboBoxItem>Matutino</ComboBoxItem>
                     <ComboBoxItem>Vespertino</ComboBoxItem>
                     <ComboBoxItem>Noturno</ComboBoxItem>
@@ -39,7 +39,7 @@
 
             </StackPanel>
             <Label Content="Descrição:" FontSize="25" Foreground="#DDFFFFFF" OpacityMask="Black"/>
-            <TextBox x:Name="txtDescricao"  Cursor="Arrow" FontSize="20" VerticalContentAlignment="Center" Height="40" BorderBrush="White" OpacityMask="Black" />
+            <TextBox x:Name="txtDescricao"  Cursor="Arrow" FontSize="20" VerticalContentAlignment="Center" Height="40" BorderBrush="White" OpacityMask="Black" Foreground="White" />
             <Button Margin="60" Grid.Row="2" Content="salvar" x:Name="Button_Salvar" Click="Button_Salvar_Click" Cursor="Hand" FontSize="30" MaxWidth="400" MinHeight="60" Background="White" BorderBrush="{x:Null}" Foreground="#FF3CC59F" OpacityMask="Black"/>
         </StackPanel>
     </Grid>

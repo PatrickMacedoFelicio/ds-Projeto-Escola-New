@@ -22,13 +22,13 @@
         <TextBlock Grid.Row="0" Text="Login" FontSize="50px" HorizontalAlignment="Center" FontWeight="Bold" Foreground="White" Margin="0,10,0,642" Grid.RowSpan="2"/>
 
         <StackPanel Grid.Row="1" Margin="200 100">
-            <Button x:Name="btCad" Margin="0,5" Height="70" FontSize="40" Click="btCad_Click" BorderBrush="#FF53AA92" Background="White" Cursor="Hand" Width="466" Foreground="Black">Cadastro Escola</Button>
-            <Button x:Name="btList" Height="82" FontSize="40" Cursor="Hand" Content="Lista Escola" Click="btList_Click" Background="White" Width="467" Foreground="Black"/>
+            <Button x:Name="btCad" Margin="0,5" Height="70" FontSize="40" Click="btCad_Click" BorderBrush="#FF53AA92" Background="White" Cursor="Hand" Width="467" Foreground="Black">Cadastro Escola</Button>
+            <Button x:Name="btList" Height="82" FontSize="40" Cursor="Hand" Content="Lista Escola" Click="btList_Click" Background="White" Width="467" Foreground="Black" BorderBrush="{x:Null}"/>
         </StackPanel>
 
-        <StackPanel Grid.Row="1" Margin="200 300 200 0 " >
-            <Button x:Name="btCad_Curso" Margin="0,5" Height="83" FontSize="40" Click="btCad_Curso_Click" Cursor="Hand" Background="White" Width="468" Foreground="Black">Cadastro Curso</Button>
-            <Button x:Name="btList_Curso" Height="85" FontSize="40" Cursor="Hand" Content="Lista Curso" Click="btList_Curso_Click" Background="White" Width="470" Foreground="Black"/>
+        <StackPanel Grid.Row="1" Margin="200 264 200 0 " >
+            <Button x:Name="btCad_Curso" Margin="0,5" Height="83" FontSize="40" Click="btCad_Curso_Click" Cursor="Hand" Background="White" Width="468" Foreground="Black" BorderBrush="{x:Null}">Cadastro Curso</Button>
+            <Button x:Name="btList_Curso" Height="85" FontSize="40" Cursor="Hand" Content="Lista Curso" Click="btList_Curso_Click" Background="White" Width="470" Foreground="Black" BorderBrush="{x:Null}"/>
         </StackPanel>
     </Grid>
 </Window>

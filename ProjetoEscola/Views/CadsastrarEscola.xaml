@@ -39,18 +39,18 @@
                 <TextBlock Text="Informações" FontSize="30" Foreground="White"/>
                 <Label Content="Nome Fantasia:" FontSize="25" TextBlock.Foreground="White"/>
 
-                <TextBox x:Name="txtNomeFantasia" FontSize="20" VerticalContentAlignment="Center"  Height="40" BorderBrush="White" TextBlock.Foreground="White"/>
+                <TextBox x:Name="txtNomeFantasia" FontSize="20" VerticalContentAlignment="Center"  Height="40" BorderBrush="White" TextBlock.Foreground="White" SelectionBrush="#FFCFFFF1" CaretBrush="#FFCFFFF1"/>
 
                 <Label Content="CNPJ:" FontSize="25" TextBlock.Foreground="White"/>
-                <TextBox x:Name="txtCNPJ" FontSize="20" VerticalContentAlignment="Center" Height="40" BorderBrush="White" TextBlock.Foreground="White"/>
+                <TextBox x:Name="txtCNPJ" FontSize="20" VerticalContentAlignment="Center" Height="40" BorderBrush="White" TextBlock.Foreground="White" CaretBrush="#FFCFFFF1" SelectionBrush="#FFCFFFF1"/>
             </StackPanel>
 
             <StackPanel Grid.Column="1" Margin="10,0">
                 <TextBlock Text="" FontSize="30" />
                 <Label Content="Razão social:" FontSize="25" TextBlock.Foreground="White"/>
-                <TextBox x:Name="txtRazaoSocial" FontSize="20" VerticalContentAlignment="Center" Height="40" BorderBrush="White" TextBlock.Foreground="White" />
+                <TextBox x:Name="txtRazaoSocial" FontSize="20" VerticalContentAlignment="Center" Height="40" BorderBrush="White" TextBlock.Foreground="White" CaretBrush="#FFCFFFF1" SelectionBrush="#FFCFFFF1" />
                 <Label Content="Inscição Estadual" FontSize="25" TextBlock.Foreground="White"/>
-                <TextBox x:Name="txtInscEstadual" FontSize="20" VerticalContentAlignment="Center" Height="40" BorderBrush="White" TextBlock.Foreground="White" />
+                <TextBox x:Name="txtInscEstadual" FontSize="20" VerticalContentAlignment="Center" Height="40" BorderBrush="White" TextBlock.Foreground="White" CaretBrush="#FFCFFFF1" SelectionBrush="#FFCFFFF1" />
 
             </StackPanel>
         </Grid>
@@ -70,24 +70,24 @@
                 <Label Content="Tipo:" FontSize="25" TextBlock.Foreground="White"/>
 
                 <StackPanel x:Name="rdTipo" Orientation="Horizontal" Height="40">
-                    <RadioButton x:Name="rdPublico" FontSize="25" GroupName="rdTipo" VerticalAlignment="Center" VerticalContentAlignment="Center" Margin="5,0" IsChecked="True" TextBlock.Foreground="White" BorderBrush="White" >Público</RadioButton>
-                    <RadioButton x:Name="rdPrivado" FontSize="25" GroupName="rdTipo" VerticalContentAlignment="Center" VerticalAlignment="Center" TextBlock.Foreground="White" >Privado</RadioButton>
+                    <RadioButton x:Name="rdPublico" FontSize="25" GroupName="rdTipo" VerticalAlignment="Center" VerticalContentAlignment="Center" Margin="5,0" IsChecked="True" TextBlock.Foreground="White" BorderBrush="White" Background="White" >Público</RadioButton>
+                    <RadioButton x:Name="rdPrivado" FontSize="25" GroupName="rdTipo" VerticalContentAlignment="Center" VerticalAlignment="Center" TextBlock.Foreground="White" BorderBrush="White" Background="White" >Privado</RadioButton>
 
                 </StackPanel>
                 <Label Content="Data Criação:" FontSize="25" TextBlock.Foreground="White"/>
-                <DatePicker x:Name="dtpDataCriacao" VerticalContentAlignment="Center" Height="40" FontSize="20" Foreground="White" BorderBrush="#89FFFFFF"/>
+                <DatePicker x:Name="dtpDataCriacao" VerticalContentAlignment="Center" Height="40" FontSize="20" Foreground="Black" BorderBrush="#89FFFFFF"/>
 
                 <Label Content="Responsável:" FontSize="25" Foreground="#DDFFFFFF"/>
 
                 <StackPanel Margin="5" Orientation="Horizontal" >
                     <StackPanel Width="300" Margin="0,0,5,0" >
                         <Label Content="Nome:" FontSize="25" Foreground="#DDFFFFFF"/>
-                        <TextBox x:Name="txtnomeResponsavel" FontSize="20" VerticalContentAlignment="Center" Height="40" BorderBrush="White" Cursor="Arrow" />
+                        <TextBox x:Name="txtnomeResponsavel" FontSize="20" VerticalContentAlignment="Center" Height="40" BorderBrush="White" Cursor="Arrow" SelectionBrush="#FFCFFFF1" CaretBrush="#FFCFFFF1" />
 
                     </StackPanel>
                     <StackPanel Width="300">
                         <Label Content="Telefone:" FontSize="25" Foreground="#DDFFFFFF"/>
-                        <TextBox x:Name="txtTelefoneResponsavel" FontSize="20" VerticalContentAlignment="Center" Height="40" BorderBrush="White" />
+                        <TextBox x:Name="txtTelefoneResponsavel" FontSize="20" VerticalContentAlignment="Center" Height="40" BorderBrush="White" CaretBrush="#FFCFFFF1" SelectionBrush="#FFCFFFF1" />
 
                     </StackPanel>
                 </StackPanel>
@@ -99,19 +99,19 @@
                 <StackPanel Orientation="Horizontal">
                     <StackPanel Width="300" Margin="0,0,5,0" >
                         <Label Content="Telefone:" FontSize="25" TextBlock.Foreground="White"/>
-                        <TextBox x:Name="txtTelefoneEscola" FontSize="20" VerticalContentAlignment="Center" Height="40" BorderBrush="White" TextBlock.Foreground="White" />
+                        <TextBox x:Name="txtTelefoneEscola" FontSize="20" VerticalContentAlignment="Center" Height="40" BorderBrush="White" TextBlock.Foreground="White" CaretBrush="#FFCFFFF1" SelectionBrush="#FFCFFFF1" />
 
                     </StackPanel>
                     <StackPanel Width="300">
                         <Label Content="Email:" FontSize="25" TextBlock.Foreground="White"/>
-                        <TextBox x:Name="txtEmalescola" FontSize="20" VerticalContentAlignment="Center" Height="40" BorderBrush="White" TextBlock.Foreground="White" />
+                        <TextBox x:Name="txtEmalescola" FontSize="20" VerticalContentAlignment="Center" Height="40" BorderBrush="White" TextBlock.Foreground="White" SelectionBrush="#FFCFFFF1" CaretBrush="#FFCFFFF1" />
 
                     </StackPanel>
                 </StackPanel>
                 <StackPanel Orientation="Horizontal">
                     <StackPanel Width="500" Margin="0,0,5,0" >
                         <Label Content="Rua:" FontSize="25" TextBlock.Foreground="White"/>
-                        <TextBox x:Name="txtRuaEsc" FontSize="20" VerticalContentAlignment="Center" Height="40" BorderBrush="White" TextBlock.Foreground="White" />
+                        <TextBox x:Name="txtRuaEsc" FontSize="20" VerticalContentAlignment="Center" Height="40" BorderBrush="White" TextBlock.Foreground="White" SelectionBrush="#FFCFFFF1" CaretBrush="#FFCFFFF1" />
 
                     </StackPanel>
                     <StackPanel Width="100">
@@ -124,29 +124,29 @@
                 <StackPanel Orientation="Horizontal">
                     <StackPanel Width="300" Margin="0,0,5,0" >
                         <Label Content="Bairro:" FontSize="25" Foreground="#DDFFFFFF"/>
-                        <TextBox x:Name="txtBairroEsc" FontSize="20" VerticalContentAlignment="Center" Height="40" BorderBrush="White" />
+                        <TextBox x:Name="txtBairroEsc" FontSize="20" VerticalContentAlignment="Center" Height="40" BorderBrush="White" Foreground="White" SelectionBrush="#FFCFFFF1" CaretBrush="#FFCFFFF1" />
 
                     </StackPanel>
                     <StackPanel Width="300">
                         <Label Content="Complemento:" FontSize="25" BorderBrush="White" Foreground="#DDFFFFFF"/>
-                        <TextBox x:Name="txtComplementoEsc" FontSize="20" VerticalContentAlignment="Center" Height="40" BorderBrush="White" />
+                        <TextBox x:Name="txtComplementoEsc" FontSize="20" VerticalContentAlignment="Center" Height="40" BorderBrush="White" Foreground="White" SelectionBrush="#FFCFFFF1" CaretBrush="#FFCFFFF1" />
 
                     </StackPanel>
                 </StackPanel>
                 <StackPanel Orientation="Horizontal">
                     <StackPanel Width="196" Margin="0,0,6,0" >
                         <Label Content="CEP:" FontSize="25" BorderBrush="White" Foreground="#DDFFFFFF"/>
-                        <TextBox x:Name="txtCepesc" FontSize="20" VerticalContentAlignment="Center" Height="40" BorderBrush="White" />
+                        <TextBox x:Name="txtCepesc" FontSize="20" VerticalContentAlignment="Center" Height="40" BorderBrush="White" Foreground="White" CaretBrush="#FFCFFFF1" SelectionBrush="#FFCFFFF1" />
 
                     </StackPanel>
                     <StackPanel Width="196" Margin="0,0,6,0">
                         <Label Content="Cidade:" FontSize="25" BorderBrush="White" Foreground="#DDFFFFFF"/>
-                        <TextBox x:Name="txtCidadeEsc" FontSize="20" VerticalContentAlignment="Center" Height="40" BorderBrush="White" />
+                        <TextBox x:Name="txtCidadeEsc" FontSize="20" VerticalContentAlignment="Center" Height="40" BorderBrush="White" Foreground="White" CaretBrush="#FFCFFFF1" SelectionBrush="#FFCFFFF1" />
 
                     </StackPanel>
                     <StackPanel Width="196">
                         <Label Content="Estado:" FontSize="25" BorderBrush="White" Foreground="#DDFFFFFF"/>
-                        <ComboBox x:Name="cbEstado" Height="40" FontSize="20" VerticalContentAlignment="Center" BorderBrush="White">
+                        <ComboBox x:Name="cbEstado" Height="40" FontSize="20" VerticalContentAlignment="Center" BorderBrush="White" Foreground="Black">
                             <ComboBoxItem>Acre</ComboBoxItem>
                             <ComboBoxItem>Alagoas</ComboBoxItem>
                             <ComboBoxItem>Amapá</ComboBoxItem>
